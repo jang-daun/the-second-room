@@ -1,3 +1,23 @@
-img {
+main {
   width: 100%;
+}
+
+.background {
+  width: 100%;
+}
+
+.twinkle {
+  position: absolute;
+}
+
+.twinkle1 {
+  width: 1520px;
+  left: 10%;
+  top: 20%;
+}
+
+.twinkle2 {
+  width: 1285px;
+  left: 30%;
+  top: 20%;
 }
