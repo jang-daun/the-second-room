@@ -15,6 +15,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .left {
@@ -23,6 +24,92 @@ body {
   border-right: solid black 1px;
   background-color: white;
 }
+.left > img {
+  width: 100%;
+}
+
+.left > .twinkle {
+  width:50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.twinkle2 {
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.twinkle1 {
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.left > .logo {
+  position: absolute;
+  top:0;
+  left: 0;
+  width:50%;
+}
+
 .right {
   width: 50%;
   height: 100%;
