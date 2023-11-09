@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
+    <!--메뉴-->
     <div id="gnb" class="">
       <div class="con">
         <div class="menu-bar flex">
@@ -54,49 +56,193 @@
             <li>
               <span class="lnb-bg"></span>
               <a href="notice.ssghtml.php">소식</a>
-              <ul>
-                <li><a href="notice.ssghtml.php">최신 뉴스</a></li>
-                <li><a href="#">서포터 소식</a></li>
-              </ul>
             </li>
             <li>
               <span class="lnb-bg"></span>
               <a href="data.ssghtml.php">자료</a>
               <ul>
-                <li><a href="data.ssghtml.php">연차 보고서</a></li>
-                <li><a href="#">재정 보고서</a></li>
+                <li><a href="data.ssghtml.php">그린피스 보고서</a></li>
+                <li><a href="#">수입 및 지출</a></li>
               </ul>
             </li>
           </ul>
           <div class="menu-bar__util-box flex">
             <div class="menu-bar__search-box">
               <a href="#">
-                <i class="fas fa-search"></i>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/header/icon_search.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="menu-bar__lang">
+              <a href="">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/header/icon_lang.svg"
+                  alt=""
+                />
               </a>
             </div>
             <div class="menu-bar__donate flex">
               <a href="#">후원하기</a>
             </div>
-            <div class="menu-bar__sns">
-              <ul>
-                <li class="flex" href="#">
-                  <a href="#">SNS</a>
-                  <i class="fas fa-sort-down"></i>
-                </li>
-                <ul>
-                  <li><a href="#">instagram</a></li>
-                  <li><a href="#">twitter</a></li>
-                  <li><a href="#">facebook</a></li>
-                </ul>
-              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--메인화면-->
+    <div id="main-visual">
+      <div class="swiper">
+        <img
+          src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/main_vs.png"
+          alt=""
+        />
+      </div>
+      <div class="main-visual__txt flex">
+        <div class="main-visual__txt-title flex">
+          <span>For nature For future</span>
+          <span
+            >그린피스는 더 푸르고 건강한 세상을 위해 싸움을 멈추지 않을
+            것입니다.</span
+          >
+        </div>
+        <div class="main-visual__txt-cont flex">
+          <a href="#">동참 하기</a>
+        </div>
+      </div>
+    </div>
+
+    <!--캠페인 섹션-->
+    <div id="campaign">
+      <div class="con flex">
+        <div class="campaign_cont">
+          <!--타이틀-->
+          <div class="title flex">
+            <a class="titleeng" href="#">Green Campaign</a>
+            <a class="titleko" href="#">그린피스 캠페인</a>
+          </div>
+          <!--섹션-->
+          <div class="main_section campaign_section">
+            <div class="campaign_cont1 flex">
+              <div class="campaign_box-1 flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/campaign_1.png"
+                />
+                <div class="campaign_box-1_txt">
+                  <a href="">해양</a>
+                  <a href="">Ocean</a>
+                </div>
+              </div>
+              <div class="campaign_box-1 flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/campaign_2.png"
+                />
+                <div class="campaign_box-1_txt">
+                  <a href="">생활</a>
+                  <a href="">Health</a>
+                </div>
+              </div>
+              <div class="campaign_box-1 flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/campaign_3.png"
+                />
+                <div class="campaign_box-1_txt">
+                  <a href="">기후</a>
+                  <a href="">Climate</a>
+                </div>
+              </div>
             </div>
-            <div class="menu-bar__lang flex">
-              <a href="#">KOR</a>
-              <i class="fas fa-sort-down"></i>
+            <div class="campaign_cont1 campaign_cont2 flex">
+              <div class="campaign_box-1 flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/campaign_4.png"
+                />
+                <div class="campaign_box-1_txt">
+                  <a href="">산림</a>
+                  <a href="">Forest</a>
+                </div>
+              </div>
+              <div class="campaign_box-1 flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/campaign_5.png"
+                />
+                <div class="campaign_box-1_txt">
+                  <a href="">플라스틱</a>
+                  <a href="">Plastic</a>
+                </div>
+              </div>
+              <div class="campaign_box-1 flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/campaign_6.png"
+                />
+                <div class="campaign_box-1_txt">
+                  <a href="">북극</a>
+                  <a href="">Artic</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!--프로젝트 섹션-->
+    <div id="project">
+      <div class="con flex">
+        <div class="project_cont">
+          <!--타이틀-->
+          <div class="title flex">
+            <div class="title_txt">
+              <a class="titleeng" href="#">Green Project</a>
+              <a class="titleko" href="#">그린피스 프로젝트</a>
+            </div>
+            <div class="title_more">
+              <a href="#">More</a>
+              <a href="#">+</a>
+            </div>
+          </div>
+          <!--섹션-->
+          <div class="main_section project_section">
+            <div class="project_section_box flex">
+              <div class="project_section_box_cont flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/project_1.jpg"
+                />
+                <a href="#">기후</a>
+                <a href="#">탈원전</a>
+              </div>
+              <div class="project_section_box_cont flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/project_2.jpg"
+                />
+                <a href="#">해양</a>
+                <a href="#">플라스틱 제로</a>
+              </div>
+              <div class="project_section_box_cont flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/project_3.jpg"
+                />
+                <a href="#">북극</a>
+                <a href="#">북극보호</a>
+              </div>
+              <div class="project_section_box_cont flex">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/project_4.jpg"
+                />
+                <a href="#">기후</a>
+                <a href="#">탈원기후 참정권</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide-bar">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--성과 섹션-->
+    
+
   </body>
 </html>

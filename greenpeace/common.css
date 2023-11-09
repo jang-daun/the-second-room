@@ -1,6 +1,6 @@
 /*폰트 시작*/
 html {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "SUIT-Regular";
 }
 @font-face {
@@ -24,6 +24,7 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+  color: #141414;
 }
 
 :root {
