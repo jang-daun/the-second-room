@@ -241,7 +241,7 @@
 
 .main-visual__txt {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
@@ -389,6 +389,7 @@
 
 .project_section_box {
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 .project_section_box_cont {
   flex-direction: column;
@@ -403,4 +404,419 @@
   font-size: 20px;
   font-weight: 600;
   margin-top: 4px;
+}
+
+.slide-bar {
+  width:100%;
+  height: 4px;
+  background-color: #DFDEE3;
+}
+.slide-bar .slide-bar_back {
+  width: 768px;
+  background-color: #67cc00;
+  height: 100%;
+}
+
+
+/*캠페인 성과*/
+
+#archive {
+  width: 100%;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.archive_cont {
+  width:100%;
+}
+.archive_cont > .title {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#archive swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#archive swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+#archive swiper-slide {
+  width: 70%;
+  justify-content: space-between;
+}
+
+#archive swiper-slide img {
+  display: block;
+  width: 504px;
+  height: 304px;
+  object-fit: cover;
+}
+#archive .archive_txt_box {
+  width:612px;
+  margin-left: 48px;
+}
+.archive_txt_box_date span {
+  font-size: 16px;
+}
+.archive_txt_box_date span:nth-child(1) {
+color:#008fe2;
+}
+
+.archive_txt_box_date span:nth-child(2) {
+color: #7A7B7E;
+}
+.archive_txt_box_title {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.archive_txt_box_cont{
+  font-size: 18px;
+  color:#4E4E51;
+  margin-top: 18px;
+  height: 96px;
+  text-overflow: ellipsis;
+  line-height: 24px;
+}
+
+
+#archive .swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset,50%);
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+/*핵심가치*/
+
+.value_cont {
+  width: 100%;
+  position: relative;
+}
+#value .title {
+  width:100%;
+  align-items: center;
+}
+
+.value_cont_box {
+  width:100%;
+  justify-content: space-between;
+}
+
+.value_cont_box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:372px;
+  height: 342px;
+}
+
+.value_box1_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.value_cont_box1 img {
+  width:74px;
+  margin-top: 50;
+}
+.value_cont_box1 span {
+  text-align: center;
+}
+
+.value_cont_box1 span:nth-of-type(1) {
+  font-size: 24px;
+  font-weight:600;
+  margin-top: 64px;
+  margin-bottom: 26px;
+}
+
+.value_cont_box1 span:nth-of-type(2) {
+  font-size: 16px;
+  font-weight:400;
+  color: #4E4E51;
+}
+
+/*News*/
+#news {
+  position: relative;
+  width: 100%;
+}
+#news::after {
+  content: "";
+  background-color: #F7F6F1;
+  position: absolute;
+  top:0;
+  width:100%;
+  height: 503px;
+  z-index: -2;
+}
+
+#news .title {
+  width:100%;
+  align-items: center;
+}
+
+.news_cont {
+  width: 100%;
+}
+
+
+.news_cont_box {
+  width:504px;
+  flex-direction: column;
+
+}
+#news .small {
+  margin-top: 34px;
+  margin-bottom: 14px;
+}
+.news_cont_box .kindsof {
+ font-size: 16px;
+ color:#67cc00;
+ border: 1px solid #67cc00;
+ width:52px;
+ height: 28px;
+ padding: 4px 12px;
+ border-radius: 16px;
+ margin-right: 16px;
+ font-weight: 600;
+}
+
+.news_cont_box .date {
+  font-size: 16px;
+  color:#7A7B7E;
+ }
+
+ #news .news_cont_box a {
+  font-weight: 600;
+  font-size: 24px;
+ }
+ .news_cont_contaion {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .news_btn_btn_box {
+  width:100%;
+  display: flex;
+  justify-content: center;
+ }
+
+ .news_more_btn {
+  margin-top: 80px;
+  width:60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.news_more_btn a {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*동참하기*/
+
+#donate {
+  position: relative;
+  width: 100%;
+  height: 591px;
+}
+
+#donate .title {
+  width:100%;
+  align-items: center;
+}
+
+.donate_cont {
+  width: 100%;
+}
+
+#donate::after {
+  content: "";
+  background-image: url("https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/donate_1.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 591px;
+  z-index: -2;
+}
+
+#donate .title a {
+  color:white;
+  font-weight: 600;
+}
+
+#donate .donate_section {
+  width:100%;
+}
+
+#donate .donate_section_box {
+  flex-direction: column;
+  align-items: center;
+}
+
+#donate .donate_section_box .info {
+  font-size: 20px;
+  color:white;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#donate .donate_section_box .btn {
+  width:104px;
+  height: 40px;
+  border:1px solid white;
+  border-radius: 20px;
+}
+
+
+#donate .donate_section_box .btn a {
+  width:100%;
+  height: 100%;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#donate .donate_section_box .btn:hover {
+  background-color: white;
+  transition: all ease 1s 0s;
+}
+
+#donate .donate_section_box .btn:hover a {
+  color:#141414;
+}
+
+
+/*뉴스레터*/
+#letter {
+  position: relative;
+  width: 100%;
+}
+
+#letter .title {
+  width:100%;
+  align-items: center;
+}
+
+.letter_cont {
+  width: 100%;
+}
+.letter_section {
+  flex-direction: column;
+  align-items: center;
+}
+.input-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.input-box .name {
+  width:205px;
+  height: 58px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: "SUIT-Regular";
+  border-radius: 29px;
+  border:0px;
+  background-color: #F9F9FB;
+}
+.input-box .email {
+  width:655px;
+  height: 58px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: "SUIT-Regular";
+  border-radius: 29px;
+  border:0px;
+  background-color: #F9F9FB;
+  margin-left: 10px;
+}
+.email_cont {
+  position: relative;
+  height: 58px;
+}
+
+.letter_btn {
+  position: absolute;
+  top:0;
+  right:-5px;
+}
+.letter_btn {
+  width:151px;
+  height: 58px;
+  background-color: #008fe2;
+  border-radius: 29px;
+}
+
+.letter_btn:hover {
+  background-color: #1d86ca;
+  transition: all ease 1s 0.3s;
+}
+
+
+.letter_btn a {
+  width: 100%;
+  height: 100%;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.check-box {
+  margin-top: 34px;
+}
+
+.check-box > input {
+  width:14px;
+  height: 14px;
+  margin: 0;
+  border: 0;
+}
+#adbox {
+  margin-left: 30px;
+}
+
+/*footer*/
+#footer {
+  width:100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#footer img {
+  width:100%;
+
 }
