@@ -273,8 +273,7 @@ a {
 /*서브페이지*/
 
 .main-cont-active {
-  height: 3529.47px;
-  overflow: hidden;
+  height: 100%;
 }
 
 .sub-page {
@@ -293,4 +292,23 @@ a {
 }
 #footer img {
   width: 100%;
+}
+
+/*top*/
+
+#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  width: 32px;
+  height: 32px;
+  z-index: 999;
+  display: flex;
+  font-weight: 900;
+  border-radius: 50%;
+  padding: 20px;
+
+  color: #141414;
+  background-color: #f9f9fb;
+  border: 1px solid #dfdee3;
 }

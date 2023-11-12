@@ -10,31 +10,20 @@
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="index.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--스와이퍼-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </head>
 
   <body>
     <!--탑버튼-->
-    <a
-      id="MOVE_TOP_BTN"
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 99;
-        bottom: 5%;
-        right: 2%;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #f9f9fb;
-        border: 1px solid #dfdee3;
-      "
-      href="#"
-      >TOP</a
-    >
+    <div class="move-top-btn con-min-width">
+      <a
+        id="MOVE_TOP_BTN"
+        href="#"
+        style="justify-content: center; align-items: center"
+        >TOP</a
+      >
+    </div>
 
     <!--메뉴-->
     <div id="gnb" class="">
@@ -131,7 +120,7 @@
           >
         </div>
         <div class="main-visual__txt-cont flex">
-          <a href="#">동참 하기</a>
+          <a href="sub-partic.html">동참 하기</a>
         </div>
       </div>
     </div>
@@ -266,6 +255,7 @@
     </div>
 
     <!--성과 섹션-->
+
     <div id="archive">
       <div class="con flex">
         <div class="archive_cont">
@@ -282,13 +272,7 @@
           </div>
           <!--섹션-->
           <div class="main_section archive_section">
-            <swiper-container
-              class="mySwiper"
-              slides-per-view="auto"
-              space-between="156"
-              navigation="true"
-              loop="true"
-            >
+            <div class="swiper-container flex">
               <swiper-slide>
                 <div class="archive_img_box">
                   <img
@@ -315,36 +299,10 @@
                   </div>
                 </div>
               </swiper-slide>
-              <swiper-slide>
+              <swiper-slide class="sec_slide">
                 <div class="archive_img_box">
                   <img
                     src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_2.jpg"
-                  />
-                </div>
-                <div class="archive_txt_box">
-                  <div class="archive_txt_box_date">
-                    <span>해양</span>
-                    <span>2023년 03월 28일</span>
-                  </div>
-                  <div class="archive_txt_box_title">
-                    그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과
-                    TOP3’
-                  </div>
-                  <div class="archive_txt_box_cont">
-                    그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중
-                    하나입니다. 1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한
-                    이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인
-                    - Protect the Oceans>을 진행하고 있으며, 과도한 어업과
-                    해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계
-                    공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고
-                    있습니다.
-                  </div>
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="archive_img_box">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_1.jpg"
                   />
                 </div>
                 <div class="archive_txt_box">
@@ -367,33 +325,17 @@
                   </div>
                 </div>
               </swiper-slide>
-              <swiper-slide>
-                <div class="archive_img_box">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_2.jpg"
-                  />
-                </div>
-                <div class="archive_txt_box">
-                  <div class="archive_txt_box_date">
-                    <span>해양</span>
-                    <span>2023년 03월 28일</span>
-                  </div>
-                  <div class="archive_txt_box_title">
-                    그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과
-                    TOP3’
-                  </div>
-                  <div class="archive_txt_box_cont">
-                    그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중
-                    하나입니다. 1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한
-                    이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인
-                    - Protect the Oceans>을 진행하고 있으며, 과도한 어업과
-                    해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계
-                    공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고
-                    있습니다.
-                  </div>
-                </div>
-              </swiper-slide>
-            </swiper-container>
+            </div>
+            <div id="swiper-button-prev">
+              <img
+                src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/icon_prev.png"
+              />
+            </div>
+            <div id="swiper-button-next">
+              <img
+                src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/icon_next.png"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -512,7 +454,7 @@
             </div>
             <div class="news_btn_btn_box">
               <div class="news_more_btn">
-                <a href="#">+</a>
+                <a href="sub-news.html">+</a>
               </div>
             </div>
           </div>
@@ -537,7 +479,7 @@
                 여러분의 관심이 더 나은 미래를 만들 수 있습니다.
               </div>
               <div class="btn">
-                <a href="#">동참하기</a>
+                <a href="sub-partic.html">동참하기</a>
               </div>
             </div>
           </div>
@@ -579,7 +521,7 @@
     <!--footer-->
     <div id="footer">
       <img
-        src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/footer/footer.png"
+        src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/footer/footer_3.png"
       />
     </div>
   </body>
