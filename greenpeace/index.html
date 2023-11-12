@@ -9,18 +9,39 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="index.css" />
-    
+
     <!--스와이퍼-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </head>
 
   <body>
+    <!--탑버튼-->
+    <a
+      id="MOVE_TOP_BTN"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 99;
+        bottom: 5%;
+        right: 2%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #f9f9fb;
+        border: 1px solid #dfdee3;
+      "
+      href="#"
+      >TOP</a
+    >
+
     <!--메뉴-->
     <div id="gnb" class="">
       <div class="con">
         <div class="menu-bar flex">
           <div class="menu-bar__logo-box">
-            <a href="index.ssghtml.php">
+            <a href="index.html">
               <img
                 src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/header/logo.svg"
               />
@@ -29,43 +50,43 @@
           <ul class="menu-bar__menu flex">
             <li>
               <span class="lnb-bg"></span>
-              <a class="" href="aboutgreen.ssghtml.php">그린피스</a>
+              <a class="" href="sub-green.html">그린피스</a>
               <ul>
-                <li><a href="aboutgreen.ssghtml.php">개요 및 역사</a></li>
-                <li><a href="#">행동방식</a></li>
-                <li><a href="#">인재 채용</a></li>
-                <li><a href="#">연락처</a></li>
-                <li><a href="#">자주하는 질문</a></li>
+                <li><a href="sub-green.html">개요 및 역사</a></li>
+                <li><a href="sub-green.html">행동방식</a></li>
+                <li><a href="sub-green.html">인재 채용</a></li>
+                <li><a href="sub-green.html">연락처</a></li>
+                <li><a href="sub-green.html">자주하는 질문</a></li>
               </ul>
             </li>
             <li>
               <span class="lnb-bg"></span>
-              <a href="active.ssghtml.php">활동</a>
+              <a href="sub-active.html">활동</a>
               <ul>
-                <li><a href="active.ssghtml.php">캠페인</a></li>
-                <li><a href="#">프로젝트</a></li>
+                <li><a href="sub-active.html">캠페인</a></li>
+                <li><a href="sub-active.html">프로젝트</a></li>
               </ul>
             </li>
             <li>
               <span class="lnb-bg"></span>
-              <a href="participate.ssghtml.php">참여</a>
+              <a href="sub-partic.html">참여</a>
               <ul>
-                <li><a href="participate.ssghtml.php">후원하기</a></li>
-                <li><a href="#">서명하기</a></li>
-                <li><a href="#">챌린지</a></li>
-                <li><a href="#">서포터 동참</a></li>
+                <li><a href="sub-partic.html">후원하기</a></li>
+                <li><a href="sub-partic.html">서명하기</a></li>
+                <li><a href="sub-partic.html">챌린지</a></li>
+                <li><a href="sub-partic.html">서포터 동참</a></li>
               </ul>
             </li>
             <li>
               <span class="lnb-bg"></span>
-              <a href="notice.ssghtml.php">소식</a>
+              <a href="sub-news.html">소식</a>
             </li>
             <li>
               <span class="lnb-bg"></span>
-              <a href="data.ssghtml.php">자료</a>
+              <a href="sub-file.html">자료</a>
               <ul>
-                <li><a href="data.ssghtml.php">그린피스 보고서</a></li>
-                <li><a href="#">수입 및 지출</a></li>
+                <li><a href="sub-file.html">그린피스 보고서</a></li>
+                <li><a href="sub-file.html">수입 및 지출</a></li>
               </ul>
             </li>
           </ul>
@@ -237,11 +258,9 @@
               </div>
             </div>
             <div class="slide-bar">
-              <div class="slide-bar_back">
-              </div>
+              <div class="slide-bar_back"></div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
@@ -263,69 +282,118 @@
           </div>
           <!--섹션-->
           <div class="main_section archive_section">
-            <swiper-container class="mySwiper" slides-per-view="auto"
-            space-between="156" navigation="true" loop="true">
+            <swiper-container
+              class="mySwiper"
+              slides-per-view="auto"
+              space-between="156"
+              navigation="true"
+              loop="true"
+            >
               <swiper-slide>
                 <div class="archive_img_box">
                   <img
-                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_1.jpg"
-                />
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_1.jpg"
+                  />
                 </div>
                 <div class="archive_txt_box">
                   <div class="archive_txt_box_date">
                     <span>해양</span>
                     <span>2023년 03월 24일</span>
                   </div>
-                  <div class="archive_txt_box_title">그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과 TOP3’</div>
-                  <div class="archive_txt_box_cont">그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중 하나입니다.  1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한 이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인 - Protect the Oceans>을 진행하고 있으며, 과도한 어업과 해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계 공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고 있습니다.</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="archive_img_box">
-                <img
-                src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_2.jpg"
-              />
-              </div>
-                <div class="archive_txt_box">
-                 <div class="archive_txt_box_date">
-                    <span>해양</span>
-                   <span>2023년 03월 28일</span>
+                  <div class="archive_txt_box_title">
+                    그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과
+                    TOP3’
                   </div>
-                  <div class="archive_txt_box_title">그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과 TOP3’</div>
-                  <div class="archive_txt_box_cont">그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중 하나입니다.  1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한 이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인 - Protect the Oceans>을 진행하고 있으며, 과도한 어업과 해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계 공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고 있습니다.</div>
+                  <div class="archive_txt_box_cont">
+                    그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중
+                    하나입니다. 1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한
+                    이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인
+                    - Protect the Oceans>을 진행하고 있으며, 과도한 어업과
+                    해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계
+                    공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고
+                    있습니다.
+                  </div>
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div class="archive_img_box">
                   <img
-                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_1.jpg"
-                />
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_2.jpg"
+                  />
+                </div>
+                <div class="archive_txt_box">
+                  <div class="archive_txt_box_date">
+                    <span>해양</span>
+                    <span>2023년 03월 28일</span>
+                  </div>
+                  <div class="archive_txt_box_title">
+                    그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과
+                    TOP3’
+                  </div>
+                  <div class="archive_txt_box_cont">
+                    그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중
+                    하나입니다. 1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한
+                    이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인
+                    - Protect the Oceans>을 진행하고 있으며, 과도한 어업과
+                    해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계
+                    공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고
+                    있습니다.
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="archive_img_box">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_1.jpg"
+                  />
                 </div>
                 <div class="archive_txt_box">
                   <div class="archive_txt_box_date">
                     <span>해양</span>
                     <span>2023년 03월 24일</span>
                   </div>
-                  <div class="archive_txt_box_title">그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과 TOP3’</div>
-                  <div class="archive_txt_box_cont">그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중 하나입니다.  1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한 이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인 - Protect the Oceans>을 진행하고 있으며, 과도한 어업과 해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계 공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고 있습니다.</div>
+                  <div class="archive_txt_box_title">
+                    그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과
+                    TOP3’
+                  </div>
+                  <div class="archive_txt_box_cont">
+                    그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중
+                    하나입니다. 1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한
+                    이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인
+                    - Protect the Oceans>을 진행하고 있으며, 과도한 어업과
+                    해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계
+                    공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고
+                    있습니다.
+                  </div>
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div class="archive_img_box">
-                <img
-                src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_2.jpg"
-              />
-              </div>
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/archive_2.jpg"
+                  />
+                </div>
                 <div class="archive_txt_box">
-                 <div class="archive_txt_box_date">
+                  <div class="archive_txt_box_date">
                     <span>해양</span>
-                   <span>2023년 03월 28일</span>
+                    <span>2023년 03월 28일</span>
                   </div>
-                  <div class="archive_txt_box_title">그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과 TOP3’</div>
-                  <div class="archive_txt_box_cont">그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중 하나입니다.  1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한 이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인 - Protect the Oceans>을 진행하고 있으며, 과도한 어업과 해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계 공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고 있습니다.</div>
+                  <div class="archive_txt_box_title">
+                    그린피스 서울사무소 해양보호 캠페인으로 이루어 낸 ‘값진 성과
+                    TOP3’
+                  </div>
+                  <div class="archive_txt_box_cont">
+                    그린피스의 해양캠페인은 오랜 역사를 가진 환경 캠페인 중
+                    하나입니다. 1970년대 ‘상업적 고래잡이 반대 캠페인’을 시작한
+                    이후 현재까지 전 세계 그린피스 사무소에서는 <바다보호 캠페인
+                    - Protect the Oceans>을 진행하고 있으며, 과도한 어업과
+                    해저자원 개발, 해양 쓰레기 오염 등으로 위협받고 있는 전 세계
+                    공해에 강력한 해양보호구역이 지정될 수 있도록 요구하고
+                    있습니다.
+                  </div>
                 </div>
               </swiper-slide>
-            </swiper-container> 
+            </swiper-container>
           </div>
         </div>
       </div>
@@ -342,48 +410,56 @@
           </div>
           <!--섹션-->
           <div class="main_section vlaue_section">
-             <div class="value_cont_box flex">
+            <div class="value_cont_box flex">
               <div class="value_cont_box1">
                 <div class="value_box1_cont flex">
                   <img
-                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_1.svg"
-                />
-                <span>해결책 제시</span>
-                <span>우리는 건강하고 평화로운 미래를 위해<br>
-                  환경문제의 해결책을 찾아내고 조사해 널리 알립니다.</span>
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_1.svg"
+                  />
+                  <span>해결책 제시</span>
+                  <span
+                    >우리는 건강하고 평화로운 미래를 위해<br />
+                    환경문제의 해결책을 찾아내고 조사해 널리 알립니다.</span
+                  >
                 </div>
               </div>
               <div class="value_cont_box1">
                 <div class="value_box1_cont flex">
                   <img
-                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_2.svg"
-                />
-                <span>비폭력 직접행동</span>
-                <span>그린피스는 평화로운 행동이<br>
-                  세상을 바꾼다고 믿습니다.</span>
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_2.svg"
+                  />
+                  <span>비폭력 직접행동</span>
+                  <span
+                    >그린피스는 평화로운 행동이<br />
+                    세상을 바꾼다고 믿습니다.</span
+                  >
                 </div>
               </div>
               <div class="value_cont_box1">
                 <div class="value_box1_cont flex">
                   <img
-                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_3.svg"
-                />
-                <span>글로벌 영향력</span>
-                <span>지구촌 곳곳에서 환경을 지키기 위해<br>
-                  그린피스가 가진 자원을 극대화 합니다.</span>
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_3.svg"
+                  />
+                  <span>글로벌 영향력</span>
+                  <span
+                    >지구촌 곳곳에서 환경을 지키기 위해<br />
+                    그린피스가 가진 자원을 극대화 합니다.</span
+                  >
                 </div>
               </div>
               <div class="value_cont_box1">
                 <div class="value_box1_cont flex">
                   <img
-                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_4.svg"
-                />
-                <span>재정적 독립성</span>
-                <span>그린피스는 정부나 기업의<br>
-                  재정 지원을 받지 않습니다.</span>
+                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/core_4.svg"
+                  />
+                  <span>재정적 독립성</span>
+                  <span
+                    >그린피스는 정부나 기업의<br />
+                    재정 지원을 받지 않습니다.</span
+                  >
                 </div>
               </div>
-             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -403,33 +479,35 @@
             <div class="news_cont_contaion flex">
               <div class="news_cont_box flex">
                 <img
-                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/news_1.jpg"
-                  />
-                  <div class="small">
-                    <span class="kindsof">기후</span>
-                    <span class="date">2023년 03월 28일</span>
-                  </div>
-                  <a href="#">COP26이 뭔가요? 6가지 문답으로 완전정복</a>
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/news_1.jpg"
+                />
+                <div class="small">
+                  <span class="kindsof">기후</span>
+                  <span class="date">2023년 03월 28일</span>
+                </div>
+                <a href="#">COP26이 뭔가요? 6가지 문답으로 완전정복</a>
               </div>
               <div class="news_cont_box flex">
                 <img
-                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/news_2.jpg"
-                  />
-                  <div class="small">
-                    <span class="kindsof">기후</span>
-                    <span class="date">2023년 03월 28일</span>
-                  </div>
-                  <a href="#">플라스틱 생산 확대 주도하는 일용 소비재 기업, 기...</a>
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/news_2.jpg"
+                />
+                <div class="small">
+                  <span class="kindsof">기후</span>
+                  <span class="date">2023년 03월 28일</span>
+                </div>
+                <a href="#"
+                  >플라스틱 생산 확대 주도하는 일용 소비재 기업, 기...</a
+                >
               </div>
               <div class="news_cont_box flex">
                 <img
-                    src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/news_3.jpg"
-                  />
-                  <div class="small">
-                    <span class="kindsof">기후</span>
-                    <span class="date">2023년 03월 28일</span>
-                  </div>
-                  <a href="#">긴급! 경주 원전에서 방사성 물질이 누출됐습니다</a>
+                  src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/main/news_3.jpg"
+                />
+                <div class="small">
+                  <span class="kindsof">기후</span>
+                  <span class="date">2023년 03월 28일</span>
+                </div>
+                <a href="#">긴급! 경주 원전에서 방사성 물질이 누출됐습니다</a>
               </div>
             </div>
             <div class="news_btn_btn_box">
@@ -455,14 +533,14 @@
           <div class="main_section donate_section">
             <div class="donate_section_box flex">
               <div class="info">
-                긍정적인 변화를  만들어 갈 수 있도록 함께 해주세요.<br>
-  여러분의 관심이 더 나은 미래를 만들 수 있습니다.
+                긍정적인 변화를 만들어 갈 수 있도록 함께 해주세요.<br />
+                여러분의 관심이 더 나은 미래를 만들 수 있습니다.
               </div>
               <div class="btn">
                 <a href="#">동참하기</a>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -484,7 +562,7 @@
                 <input class="email" type="email" placeholder="이메일*" />
                 <div class="letter_btn">
                   <a class="submit" href="#">구독하기</a>
-              </div>
+                </div>
               </div>
             </div>
             <div class="check-box">
@@ -500,7 +578,9 @@
 
     <!--footer-->
     <div id="footer">
-      <img src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/footer/footer.png"/>
+      <img
+        src="https://cdn.jsdelivr.net/gh/jang-daun/web-resource/greenpeace/footer/footer.png"
+      />
     </div>
   </body>
 </html>

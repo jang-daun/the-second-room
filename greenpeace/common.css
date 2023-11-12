@@ -50,3 +50,247 @@ a {
 }
 
 /*노멀라이즈 끝*/
+
+/*메뉴*/
+#gnb {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 99;
+}
+.lnb-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: -22;
+  opacity: 0;
+}
+.menu-bar__menu > li:hover .lnb-bg {
+  height: 150px;
+  opacity: 1;
+}
+#gnb.whitebg {
+  background: linear-gradient(
+    white 100px,
+    rgba(255, 255, 255, 0) 100px,
+    rgba(255, 255, 255, 0)
+  );
+}
+.white {
+  background-color: white;
+}
+
+#gnb .con {
+  width: 1560px;
+  height: 100%;
+}
+
+#gnb .menu-bar {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gnb .menu-bar > div {
+  width: 520px;
+}
+
+.menu-bar__menu {
+  height: 100%;
+  align-items: center;
+}
+.menu-bar__menu > li {
+  position: relative;
+}
+
+.menu-bar__menu ul {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 3%;
+}
+
+.menu-bar__menu > li:hover ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-bar__menu ul li {
+  margin-bottom: 24px;
+}
+.menu-bar__menu ul li a {
+  white-space: nowrap;
+  padding: 8px 20px;
+}
+.menu-bar__menu ul li a {
+  color: #141414;
+}
+
+.menu-bar__menu ul > li:hover a {
+  color: #67cc00;
+}
+.menu-bar__menu > li {
+  position: relative;
+}
+
+.menu-bar__menu > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar__menu > li > a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin: 0 14px;
+  padding: 20px 20px;
+  color: white;
+}
+
+#gnb .menu-bar__menu > li > a.black {
+  color: black;
+}
+
+/*2차메뉴 드롭*/
+.menu-bar__menu > li > a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 150%;
+  transition: all 0.4s;
+  background-color: white;
+}
+
+.menu-bar__menu > li:nth-child(1) > a::after {
+  background-color: white;
+  height: 430%;
+}
+
+.menu-bar__menu > li:nth-child(2) > a::after {
+  background-color: white;
+  height: 210%;
+}
+
+.menu-bar__menu > li:nth-child(3) > a::after {
+  background-color: white;
+  height: 350%;
+}
+
+.menu-bar__menu > li:nth-child(4) > a::after {
+  background-color: white;
+  height: 0%;
+}
+
+.menu-bar__menu > li:nth-child(5) > a::after {
+  background-color: white;
+  height: 210%;
+}
+.menu-bar__menu > li:hover > a::after {
+  width: 140px;
+}
+.menu-bar__menu > li:hover > a {
+  font-weight: 600;
+}
+
+/*메뉴바 btn*/
+
+.menu-bar__sns ul > ul {
+  display: block;
+}
+
+.menu-bar__sns ul > ul {
+  display: none;
+}
+
+.menu-bar__util-box a {
+  color: white;
+  margin-left: 5px;
+}
+.menu-bar__util-box {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.menu-bar__util-box > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-bar__util-box > div a {
+  color: white;
+  font-size: 16px;
+}
+
+.menu-bar__util-box > div a.black {
+  color: black;
+}
+.menu-bar__util-box > div i.black {
+  color: black;
+}
+.menu-bar__lang {
+  margin-left: 20px;
+}
+
+.menu-bar__donate {
+  margin-left: 50px;
+  width: 104px;
+  height: 40px;
+  background-color: #2093dd;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-bar__donate:hover {
+  background-color: #1d86ca;
+  transition: all ease 1s 0.3s;
+}
+
+.menu-bar__donate > a {
+  font-weight: 500;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.menu-bar__search-box {
+  margin-right: 20px;
+}
+
+/*서브페이지*/
+
+.main-cont-active {
+  height: 3529.47px;
+  overflow: hidden;
+}
+
+.sub-page {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/*footer*/
+#footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#footer img {
+  width: 100%;
+}
