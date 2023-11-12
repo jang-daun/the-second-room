@@ -1,0 +1,12 @@
+html {
+  overflow-y: scroll;
+}
+
+.main-detail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-detail img {
+  width: 80%;
+}
