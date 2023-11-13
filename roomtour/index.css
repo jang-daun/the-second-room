@@ -1,5 +1,6 @@
 main {
   width: 100%;
+  position: relative;
 }
 
 .background {
@@ -107,4 +108,20 @@ main {
   -webkit-animation: blink 1s ease-in-out alternate;
   -moz-animation: blink 1s ease-in-out alternate;
   animation: blink 5s 0s ease-in-out alternate;
+
+  z-index: 999;
+}
+
+.click {
+  width: 278px;
+  height: 450px;
+  position: absolute;
+  top: 42%;
+  left: 42.8%;
+  display: flex;
+}
+
+.click a {
+  width: 278px;
+  height: 450px;
 }
